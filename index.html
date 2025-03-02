@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="poppins-light">
+  <nav class="fixed-icons">
+    <ul>
+      <div class="icon-box">
+        <li><a href="#home"><i class="fas fa-home" data-text="HOME"></i></a></li>
+        <li><a href="#about"><i class="fas fa-laptop-code" data-text="SKILLS"></i></a></li>
+        <li><a href="#project"><i class="fas fa-network-wired" data-text="PROJECTS"></i></a></li>
+        <li><a href="#achievements"><i class="fas fa-graduation-cap" data-text="ACHIEVEMENTS"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope" data-text="CONTACT"></i></a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <header>
+    <p class="header-title">Unleashing Innovation: A Full Stack Tale of Code and Creativity</p>
+  </header>
+
+  <section id="home">
+    <div class="name">
+      <p id="role">Java Developer</p>
+      <p id="intro"><span class="intro-text">Hello, I'm</span></p>
+      <div class="typewriter-container">
+        <p class="typewriter">Charumathi K</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="circular-image" src="profile.jpeg" alt="Profile Picture">
+    </div>
+    <a href="https://drive.google.com/file/d/1tLc4_X5jSKSmMozj7caPH4Rk9qgIntE9/view?usp=sharing" class="download-resume" target="_blank">View
+      Resume</a>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <span class="number" data-target="0">0</span>
+      <p>Years of experience</p>
+    </div>
+    <div class="stat">
+      <span class="number" data-target="4">0</span>
+      <p>No Of Projects</p>
+    </div>
+    <div class="stat" style="position: relative;top: 25px;">
+      <span class="number" data-target="200">0</span>
+      <p>Problems Solved</p>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <h2 class="skill-title">Skills and Technologies</h2>
+    <div class="skills-box" id="skills-box">
+    </div>
+  </section>
+
+
+  <div class="portfolio" id="project">
+    <h2 class="my-projects">My Projects</h2>
+    <div class="project">
+      <div class="project-info">  
+        <h2></h2>
+        <h1></h1>
+        <p class="des1"></p>
+        <p class="des2"></p>
+        <p class="tech-stack"></p>
+        <div class="project-links">
+          <div class="circle">
+            <a data-tooltip="Live project" href="" class="live-link" target="_blank">
+              <i style="color: white; font-size: 30px; text-align: center;" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <div class="circle2" style="position: relative; left: 20px;">
+            <a href="" class="github-link" data-tooltip="Source Code" target="_blank">
+              <i class="fab fa-github" style="color: white; font-size: 40px; text-align: center; position: relative; margin: 5px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-image">
+        <div class="image-loader"></div> 
+        <img src="./assets/project1.png" alt="Project Image">
+      </div>
+    </div>
+    <div class="navigation-arrows">
+      <button class="prev" onclick="showPrevProject()">&#8592;</button>
+      <button class="next" onclick="showNextProject()">&#8594;</button>
+    </div>
+  </div>
+  
+
+  <div class="certifications-section" id="achievements">
+    <h2>My Achievements</h2>
+    <div class="certifications-carousel" id="certificationsCarousel">
+        
+    </div>
+  </div>
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h2 style="margin-bottom: 20px;">Contact Me</h2>
+          <p class="email"><i class="fas fa-paper-plane"></i> charumathik2003@gmail.com</p>
+          <p class="phone"><i class="fas fa-phone-square-alt"></i> +91 99763 41892</p>
+          <div class="social-icons">
+            <a href="https://github.com/Charumathi-65"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/charumathi65/"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="container">
+            <h2 class="text-center mt-5">Contact Me</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="46c4d8e8-2a78-4957-ac9f-f2eb485a5d8f">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn2">Submit</button>
+            </form>
+        </div>     
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2024 Charumathi K</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      function smoothScroll(target, duration, offset = 0) {
+        const targetElement = document.querySelector(target);
+        if (!targetElement) return;
+
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const scrollAmount = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+          window.scrollTo(0, scrollAmount);
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function easeInOutCubic(t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return c / 2 * t * t * t + b;
+          t -= 2;
+          return c / 2 * (t * t * t + 2) + b;
+        }
+
+        requestAnimationFrame(animation);
+      }
+
+      document.querySelectorAll('nav.fixed-icons a').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = e.target.closest('a').getAttribute('href');
+          const offset = 200;
+          smoothScroll(targetId, 1000, offset);
+        });
+      });
+
+      const tabLinks = document.querySelectorAll('.tab-links');
+      const tabContents = document.querySelectorAll('.tab-contents');
+
+      tabLinks.forEach((link, index) => {
+        link.addEventListener('click', () => {
+          tabLinks.forEach(tab => tab.classList.remove('active-link'));
+          tabContents.forEach(content => content.classList.remove('active-tab'));
+
+          link.classList.add('active-link');
+          tabContents[index].classList.add('active-tab');
+        });
+      });
+    });
+
+
+    document.querySelectorAll('nav.fixed-icons a').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.closest('a').getAttribute('href');
+        smoothScroll(targetId, 1000);
+      });
+    });
+
+
+    const projects = [
+    {
+        id: 1,
+        title: "Online Store Using React",
+        description1: "This online store is built using React and features a Home page that showcases trending products. The store includes dedicated category pages for men’s, women’s, and kids’ products, making it easy for users to navigate and find what they are looking for.",
+        description2:"A shopping cart page is also available, allowing users to view and manage the items they have added to their cart, ensuring a smooth and enjoyable shopping experience.",
+        techStack: "ReactJS, CSS",
+        imgSrc: "./assets/project1.png",
+        projectLink: "https://charumathi-65.github.io/Online-Shop-React/",
+        githubLink: "https://github.com/Charumathi-65/Online-Shop-React"
+    },
+    {
+        id: 2,
+        title: "Responsive Education Website",
+        description1: "This project involves the development of a fully responsive system using HTML and CSS. It includes essential features such as the ability to visit various courses, create an account, and view community experts",
+        description2:"The ability to view community experts helps users connect with knowledgeable individuals, fostering a collaborative learning environment.",
+        techStack: "HTML,CSS",
+        imgSrc: "./assets/project2.png",
+        projectLink: "https://charumathi-65.github.io/Project2/",
+        githubLink: "https://github.com/Charumathi-65/Project2"
+    },
+    {
+        id: 3,
+        title: "Anticipating Electricity Consumption Through ML",
+        description1: "This system enables efficient taxi booking, allowing users to request rides based on availability and optimal driver assignment",
+        description2:"Each booking tracks trip details like pickup, drop-off, and fare, and provides real-time updates for a seamless user experience.This is a console-level application, designed to operate via command-line interactions",
+        techStack: "Python,Decision Tree & Random Forest Algorithm",
+        imgSrc: "./assets/project3.jpeg",
+        githubLink: "https://github.com/Charumathi-65/Anticipating-Electricity-Consumption-through-Machine-Learning"
+    },
+    {
+        id: 4,
+        title: "Taxi Booking System",
+        description1: "This leverages four years of TANGEDCO data to forecast energy consumption, promoting renewable energy for a greener India.",
+        description2:"Users can set monthly bill limits, receiving SMS if consumption exceeds these limits. Enhanced anomaly detection help identify potential theft, with all data consolidated into a unified dataset.",
+        techStack: "Advanced Java,OOPS Concept",
+        imgSrc: "./assets/project4.jpeg",
+        githubLink: "https://github.com/Charumathi-65/Taxi-Booking"
+    },
+];
+
+let currentIndex = 0;
+
+function showProject(index) {
+    const project = projects[index];
+
+  
+    document.querySelector('.project-info h2').textContent = String(project.id).padStart(2, '0');
+    document.querySelector('.project-info h1').textContent = project.title;
+    document.querySelector('.project-info .des1').textContent = project.description1;
+    document.querySelector('.project-info .des2').textContent = project.description2;
+    document.querySelector('.tech-stack').textContent = project.techStack;
+    const liveLink = document.querySelector('.live-link');
+    const circle = document.querySelector('.circle');
+    const circle2 = document.querySelector('.circle2');
+
+    if (project.id === 3 || project.id === 4) {
+        liveLink.style.display = "none";
+        circle.style.display = "none";
+        circle2.style.marginLeft = "-30px";
+        circle2.style.marginTop = "-20px";
+    } else {
+        liveLink.style.display = "inline-block";
+        circle.style.display = "inline-block";
+        liveLink.href = project.projectLink;
+    }
+    document.querySelector('.github-link').href = project.githubLink;
+
+    const projectImage = document.querySelector('.project-image img');
+    const loader = document.querySelector('.image-loader');
+
+    loader.style.display = "block";
+    projectImage.style.display = "none";
+
+    projectImage.onload = function () {
+        loader.style.display = "none";
+        projectImage.style.display = "block";
+    };
+
+    projectImage.classList.remove('visible');
+
+  
+    setTimeout(() => {
+        projectImage.src = project.imgSrc; 
+        projectImage.classList.add('visible');
+    }, 500);
+}
+
+
+
+
+function showNextProject() {
+    currentIndex = (currentIndex + 1) % projects.length;
+    showProject(currentIndex);
+}
+
+function showPrevProject() {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    showProject(currentIndex);
+}
+
+showProject(currentIndex);
+
+const options = {
+    root: null,
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        } else {
+            entry.target.classList.remove('visible');
+        }
+    });
+}, options);
+
+document.querySelectorAll('.portfolio, .project').forEach((section) => {
+    observer.observe(section);
+});
+
+
+
+  </script>
+
+</body>
+
+</html>
